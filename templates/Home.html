@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class = "login">
+        <h1> Diabetese Prediction
+        <form action = "{{url_for('predict_datapoint')}}" method="post">
+            <input type = "text" placeholder="Pregnancies" name = "Pregnancies" required = "required"><br>
+            <input type = "text" placeholder="Glucose" name = "Glucose" required = "required"><br>
+            <input type = "text" placeholder="BloodPressure" name = "BloodPressure" required = "required"><br>
+            <input type = "text" placeholder="SkinThickness" name = "SkinThickness" required = "required"><br>
+            <input type = "text" placeholder="Insulin" name = "Insulin" required = "required"><br>
+            <input type = "text" placeholder="BMI" name = "BMI" required = "required"><br>
+            <input type = "text" placeholder="DiabetesPedigreeFunction" name = "DiabetesPedigreeFunction" required = "required"><br>
+            <input type = "text" placeholder="Age" name = "Age" required = "required"><br>
+
+            <br><br><button type = 'submit' class = 'btn btn-primary btn-block btn-large'>Predict Data</button>
+        </form>
+        </h1>
+    </div>
+</body>
+</html>
